@@ -64,12 +64,3 @@ export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
-#export NVM_DIR="/home/daniel/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-#JAVA_HOME=/home/daniel/software/jdk1.7.0_45
-#SDK_HOME=/home/daniel/software/android_SDK/tools
-#SDK_tools_HOME=/home/daniel/software/android_SDK/platform-tools
-#NDK_HOME=/home/daniel/software/android-ndk-r10d
-#export PATH=$JAVA_HOME/bin:$NDK_HOME:$SDK_HOME:$PATH
-
