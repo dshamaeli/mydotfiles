@@ -9,17 +9,18 @@
 #umask 022
 
 # if running bash
-#if [ -n "$BASH_VERSION" ]; then
-#    # include .bashrc if it exists
-#    if [ -f "$HOME/.bashrc" ]; then
-#	. "$HOME/.bashrc"
-#    fi
-#fi
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
 
 JAVA_HOME=/home/daniel/software/jdk1.7.0_45
 SDK_HOME=/home/daniel/software/android_SDK/tools
@@ -28,6 +29,3 @@ ANDROID_NDK_HOME=/home/daniel/software/android-ndk-r10d
 #NVM_DIR=/home/daniel/.nvm
 NODE_DIR=/usr/bin/node
 export PATH=$JAVA_HOME/bin:$SDK_HOME:$SDK_tools_HOME:$ANDROID_NDK_HOME:$NODE_DIR:$PATH
-
-#nvm use v0.11.14	
-

@@ -64,3 +64,12 @@ export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
+#user path
+
+JAVA_HOME=/home/daniel/software/jdk1.7.0_45
+SDK_HOME=/home/daniel/software/android_SDK/tools
+SDK_tools_HOME=/home/daniel/software/android_SDK/platform-tools
+ANDROID_NDK_HOME=/home/daniel/software/android-ndk-r10d
+#NVM_DIR=/home/daniel/.nvm
+NODE_DIR=/usr/bin/node
+export PATH=$JAVA_HOME/bin:$SDK_HOME:$SDK_tools_HOME:$ANDROID_NDK_HOME:$NODE_DIR:$PATH

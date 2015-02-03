@@ -122,9 +122,9 @@ alias kerio-stop="sudo /etc/init.d/kerio-kvc stop"
 alias snova="sh /home/daniel/software/snova-0.22.0/bin/start.sh"
 alias emacs="emacs -nw"
 
-export GITAWAREPROMPT=~/.bash/git-aware-prompt
-source $GITAWAREPROMPT/main.sh
-export PS1="\[\033[0;34m\][\u@\h:\W]\[\033[0m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+#export GITAWAREPROMPT=~/.bash/git-aware-prompt
+#source $GITAWAREPROMPT/main.sh
+#export PS1="\[\033[0;34m\][\u@\h:\W]\[\033[0m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
 # set PATH so it includes user's private bin if it exists
 
