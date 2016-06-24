@@ -127,7 +127,7 @@ fi
 
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source $GITAWAREPROMPT/main.sh
-tty -s && export PS1="\[\033[0;34m\][\u@\h:\W]\[\033[0m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+tty -s && export PS1="\[\033[0;32m\][\u@\h:\W]\[\033[0m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
 ##------------------------------
 ## -- 3) User-customized code  --
@@ -140,6 +140,15 @@ alias pxupdate="sudo proxychains apt-get update && sudo proxychains apt-get upgr
 alias update="sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get autoremove && sudo apt-get autoclean"
 alias kerio-start="sudo /etc/init.d/kerio-kvc start"
 alias kerio-stop="sudo /etc/init.d/kerio-kvc stop"
-alias snova="sh /home/daniel/software/snova-0.22.0/bin/start.sh"
 alias emacs="emacs -nw"
-
+alias unpm="npm install -g npm && sudo rm /usr/bin/npm && sudo ln -s /home/daniel/software/npm/lib/node_modules/npm/bin/npm-cli.js /usr/bin/npm"
+alias avval_connect="ssh root@mci -L 3377:localhost:3377 -L 9200:localhost:9200 -L 27021:localhost:27017 -L 3306:localhost:3306 -L 8090:172.17.251.18:8090" 
+alias market-connect="ssh root@market -L 3307:localhost:3306 -L 9090:localhost:9090"
+alias connect_vm01="ssh root@17-afranet -L 6011:localhost:6011 -L 8090:172.17.42.1:8090 -L 6101:localhost:6101"
+alias connect_vm02="ssh root@18-afranet"
+alias app-server="ssh root@app-server -L 8090:172.17.251.18:8090 -L 3308:172.17.05:3306"
+alias stunnel="sh /home/daniel/software/tunnel.sh"
+alias dc="docker-compose"
+alias tunnel="sslocal -c software/config.json"
+alias ttunnel="sshuttle -r daniel@us-vps 0.0.0.0/0 -vv"
+alias sdkup="sh ~/software/android.sh"

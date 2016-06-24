@@ -66,10 +66,13 @@ export PATH=/usr/local/sbin:$PATH
 
 #user path
 
-JAVA_HOME=/home/daniel/software/jdk1.7.0_45
-SDK_HOME=/home/daniel/software/android_SDK/tools
-SDK_tools_HOME=/home/daniel/software/android_SDK/platform-tools
-ANDROID_NDK_HOME=/home/daniel/software/android-ndk-r10d
-#NVM_DIR=/home/daniel/.nvm
-NODE_DIR=/usr/bin/node
-export PATH=$JAVA_HOME/bin:$SDK_HOME:$SDK_tools_HOME:$ANDROID_NDK_HOME:$NODE_DIR:$PATH
+export JAVA_HOME=/home/daniel/software/jdk1.8.0_92
+export SDK_HOME=/home/daniel/software/android_SDK/tools
+export SDK_tools_HOME=/home/daniel/software/android_SDK/platform-tools
+export ANDROID_NDK_HOME=/home/daniel/software/android-ndk-r10d
+#export NVM_DIR=/home/daniel/.nvm
+export NODE_DIR=/usr/bin/node
+export GOROOT=/home/daniel/software/go
+export GOPATH=/home/daniel/workspace/go
+export PATH=$PATH:$JAVA_HOME/bin:$SDK_HOME:$SDK_tools_HOME:$ANDROID_NDK_HOME:$NODE_DIR:$GOROOT/bin
+
